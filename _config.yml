@@ -2,23 +2,20 @@
 #
 
 # Site settings
-title: Spectral
-description: |
-  Another fine responsive  
-  site template freebie  
-  crafted by [HTML5 UP](http://html5up.net)
-owner: Your Name # or company name
-first_published: 2016 # if migrating another site, the year of your first publish
-email: your-email@domain.com
+title: Andrew Xu Personal Website
+description: 
+owner: Andrew Xu
+first_published: 2019
+email: andrew.ax.xu@gmail.com
 baseurl: /andrewaxxu.github.io # the subpath of your site, e.g. /blog
 url: andrewaxxu
 social:
-  twitter: https://twitter.com/<username>
-  github: https://github.com/<username>
-  linkedin-square: https://linkedin.com/in/<username>
-  facebook-official: https://facebook.com/<username>
-  google-plus-square: https://plus.google.com/u/0/+<username>
-  #email: /contact/
+  #twitter: https://twitter.com/<username>
+  github: https://github.com/andrewaxxu
+  linkedin-square: https://www.linkedin.com/in/andrewaxxu/
+  facebook-official: https://www.facebook.com/andrewaxxu
+  #google-plus-square: https://plus.google.com/u/0/+<username>
+  email: /contact/andrew.ax.xu@gmail.com
   #flickr:
   #instagram:
   #youtube-square:
