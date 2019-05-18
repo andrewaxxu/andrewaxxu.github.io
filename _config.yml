@@ -7,7 +7,7 @@ description:
 owner: Andrew Xu
 first_published: 2019
 email: andrew.ax.xu@gmail.com
-baseurl: /andrewaxxu.github.io # the subpath of your site, e.g. /blog
+baseurl: andrewaxxu.github.io
 url: andrewaxxu
 social:
   #twitter: https://twitter.com/<username>
