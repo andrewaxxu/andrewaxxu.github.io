@@ -57,24 +57,22 @@
 			</section>
 
       <!-- About me -->
-      <section id="aboutMe" class="wrapper alt style2">
-        <section class="spotlight">
-          <div class="image"><img src="images/Profile Pic.jpg" alt="" /></div><div class="content">
-            <h2>Hi there!</h2>
-            <p>Welcome to my website! I'm Andrew, a Mechatronics Engineering student at the University of Waterloo.
-              <br/><br/>
-              I have over 2 years of experience in electrical engineering projects and specialize in PCB and Hardware Systems Design as well as Electrical Product Development.
-              My portfolio highlights some of my interesting projects!
-              <br/><br/>
-              Outside of work, I love spending time outdoors. Ask me about my latest adventure or about my husky, Bear!
-            </p>
-          </div>
-        </section>
+      <section class="spotlight wrapper alt style2">
+        <div class="image"><img src="images/Profile Pic.jpg" alt="" /></div><div class="content">
+          <h2>Hi there!</h2>
+          <p>Welcome to my website! I'm Andrew, a Mechatronics Engineering student at the University of Waterloo.
+            <br/><br/>
+            I have over 2 years of experience in electrical engineering projects and specialize in PCB and Hardware Systems Design as well as Electrical Product Development.
+            My portfolio highlights some of my interesting projects!
+            <br/><br/>
+            Outside of work, I love spending time outdoors. Ask me about my latest adventure or about my husky, Bear!
+          </p>
+        </div>
       </section>
 
 
 		  <!-- Seeking Internships -->
-			<section id="seeking" class="wrapper style4 special">
+			<section id="seeking" class="wrapper style4 special" style="padding-top:6em;padding-bottom:2em">
 				<div class="inner">
 					<header class="major">
 						<h2>Currently Seeking Full-Time Electrical Engineering opportunities for 2021</h2>
@@ -87,41 +85,61 @@
 			</section>
 
 			<!-- Design Portfolio -->
-      <section id="portfolio" class="wrapper style2 special">
+      <section id="portfolio" class="wrapper style2 special" >
         <div class="inner">
-          <header class="minor">
-            <h2>PCB Portfolio</h2>
-          </header>
-             <button style="width:45%; margin-bottom:0.5em" >Injection Molding Machine Motherboard</button>
-             <button style="width:45%; margin-bottom:0.5em">OLED & UI Daughter Board</button>
-             <button style="width:45%; margin-bottom:0.5em">Sync. Square Wave Generator</button>
-             <button style="width:45%; margin-bottom:0.5em">Desktop CNC Motherboard</button>
-             <button style="width:45%; margin-bottom:0.5em">Sailbot Power Distribution Board</button>
-             <button style="width:45%; margin-bottom:0.5em">UV LED Driver Board </button>
-             <button style="width:45%; margin-bottom:0.5em">Voltage Monitor Daughter Board</button>
+          <h2>PCB Portfolio</h2>
+            <button id="injectBtn"         style="width:45%; margin-bottom:0.5em">Injection Molding Machine Motherboard</button>
+            <button id="daughterBoardBtn"  style="width:45%; margin-bottom:0.5em">OLED & UI Daughter Board</button>
+            <button id="squareWaveBtn"     style="width:45%; margin-bottom:0.5em">Sync. Square Wave Generator</button>
+            <button id="desktopCNCBtn"     style="width:45%; margin-bottom:0.5em">Desktop CNC Motherboard</button>
+            <button id="pdbBtn"            style="width:45%; margin-bottom:0.5em">Sailbot Power Distribution Board</button>
+            <button id="uvBtn"             style="width:45%; margin-bottom:0.5em">UV LED Driver Board </button>
+            <button id="voltageBtn"        style="width:45%; margin-bottom:0.5em">Voltage Monitor Daughter Board</button>
          </div>
-         <!-- <div class="inner">
-           <header id = "experience" class="minor" style="margin-top:2em">
-             <h2>Experience</h2>
-           </header>
-         </div>
-         <div>
-           <ul class="experienceList">
+       </section>
+
+       <section id="experience" class="wrapper style4 alt special" style="margin-top:1em">
+         <h2>Experience</h2>
+       </section>
+
+       <section class="wrapper style2 special" style="padding-top:3em;padding-bottom:0">
+         <article class="fillerLeft"></article>
+         <article class="workIcons">
+           <img src="images/icons/Formlabs Icon.png"/>
+         </article>
+         <article class="fillerRight"></article>
+         <article class="workDescrip">
+           <ul>
+             <h4>Electrical Engineering Intern @ Formlabs</h4>
+             <li>Designed and tested wireless interlock system to disable lasers on Form3L to achieve UL Certification</li>
+             <li>Characterized thermal behaviour of ultrasonic sensors and heaters systems to increase Form 3L system performance</li>
+           </ul>
+         </article>
+       </section>
+       <section class="wrapper style2 special" style="padding-top:3em;padding-bottom:1em">
+         <article class="fillerLeft"></article>
+         <article class="workIcons">
+           <img src="images/icons/Structur3D Icon.png"/>
+         </article>
+         <article class="fillerRight"></article>
+         <article class="workDescrip">
+           <ul>
+             <h4>Electronics Development Intern @ Structur3D Printing</h4>
+             <li>Designed, tested and programmed 8-bit embedded system for desktop injection moulding machine</li>
+             <li>Facilitated supply chain setup for machines to support manufacturing ahead of 2020 shipment</li>
+           </ul>
+         </article>
+       </section>
+
+           <!-- <ul class="experienceList">
              <li>
-               <div class="row">
-                 <img src="images/icons/Formlabs Icon.png" /><p class="experienceTitle">My role at Formlabs is to help finalize the development of Formlabs' newest 3D printer, the Form 3L. This next generation SLA printer has 5 times the build volume as the current Form 3.
-My work focuses on characterizing sensor behaviour during various times of the print, including thermal behaviour and sensor deviation. I also design safety subsystems and revise
-</p>
-               </div>
+
              </li>
              <li><img src="images/icons/Structur3D Icon.png" /><p>Structur3D Printing</p></li>
              <li><img src="images/icons/Oxilight Icon.png" /><p>Oxilight Inc</p></li>
              <li><img src="images/icons/DA Icon.png" /><p>DA-Integrated</p></li>
              <li><img src="images/icons/Rave Icon.png" /><p>Rave Media Inc</p></li>
-           </ul>
-         </div> -->
-
-       </section>
+           </ul> -->
 
 
 
@@ -135,8 +153,65 @@ My work focuses on characterizing sensor behaviour during various times of the p
 </footer>
 
 
-<!-- Scripts -->
+<!-- Modals -->
+<div id="Injection Mobo" class="modal">
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <p style="color:black">Injection Mobo</p>
+    <img src="images/icons/Structur3D Icon.png" />
+  </div>
+</div>
+<div id="OLED Daughter" class="modal">
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <p style="color:black">OLED Daughter</p>
+    <img src="images/icons/Structur3D Icon.png" />
+  </div>
+</div>
+<div id="Square Wave Gen" class="modal">
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <p style="color:black">Square Wave Gen</p>
+    <img src="images/icons/Structur3D Icon.png" />
+  </div>
+</div>
+<div id="CNC Mobo" class="modal">
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <p style="color:black">CNC Mobo</p>
+    <img src="images/icons/Structur3D Icon.png" />
+  </div>
+</div>
+<div id="Sailbot PDB" class="modal">
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <p style="color:black">Sailbot PDB</p>
+    <img src="images/icons/Structur3D Icon.png" />
+  </div>
+</div>
+<div id="UV LED Driver" class="modal">
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <p style="color:black">UV LED Driver</p>
+    <img src="images/icons/Structur3D Icon.png" />
+  </div>
+</div>
+<div id="Voltage Monitor" class="modal">
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <p style="color:black">Voltage Monitor</p>
+    <img src="images/icons/Structur3D Icon.png" />
+  </div>
+</div>
 
+<!-- Scripts -->
 <script src="/js/jquery.min.js"></script>
 <script src="/js/jquery.scrollex.min.js"></script>
 <script src="/js/jquery.scrolly.min.js"></script>

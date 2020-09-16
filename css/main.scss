@@ -1832,47 +1832,129 @@ $baseurl: '{{ site.baseurl }}/images';
 			}
 		}
 	}
-	.scene {
-	  width: 23.83em;
-	  height: 25em;
-	  margin: 40px 0;
-	  perspective: 600px;
-	}
 
-	.card {
-	  width: 100%;
-	  height: 100%;
-	  transition: transform 1s;
-	  transform-style: preserve-3d;
-	  cursor: pointer;
-	  position: relative;
-	}
+	/* The Modal (background) */
+ .modal {
+   display: none; /* Hidden by default */
+   position: fixed; /* Stay in place */
+   z-index: 1; /* Sit on top */
+   left: 0;
+   top: 0;
+   width: 100%; /* Full width */
+   height: 100%; /* Full height */
+   overflow: auto; /* Enable scroll if needed */
+   background-color: rgb(0,0,0); /* Fallback color */
+   background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+	 padding-right: 15px;
+ }
 
-	.card.is-flipped {
-	  transform: rotateY(180deg);
-	}
+ /* Modal Content/Box */
+ .modal-content {
+   background-color: #fefefe;
+   margin: 8% auto; /* 15% from the top and centered */
+   padding: 1em;
+   border: 1px solid #888;
+   width: 80%; /* Could be more or less, depending on screen size */
+	 box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 0.4s;
+  animation-name: animatetop;
+  animation-duration: 0.4s
+ }
+ /* Add Animation */
+ @-webkit-keyframes animatetop {
+   from {top:-300px; opacity:0}
+   to {top:0; opacity:1}
+ }
 
-	.card__face {
-	  position: absolute;
-	  width: 100%;
-	  height: 100%;
-	  line-height: 260px;
-	  text-align: center;
-	  font-weight: bold;
-	  font-size: 40px;
-	  backface-visibility: hidden;
-	}
+ @keyframes animatetop {
+   from {top:-300px; opacity:0}
+   to {top:0; opacity:1}
+ }
 
-	.card__face--front {
-	  background: #247BA0;
-	  color:white;
-	}
+ /* The Close Button */
+ .close {
+   color: #aaa;
+   float: right;
+   font-size: 28px;
+   font-weight: bold;
+ }
 
-	.card__face--back {
-	  background: rgb(140,140,140);
-	  transform: rotateY(180deg);
-	  color: white;
+ .close:hover,
+ .close:focus {
+   color: black;
+   text-decoration: none;
+   cursor: pointer;
+ }
+
+ p.experienceTitle {
+   padding-left: 10em;
+ }
+
+ article.workIcons{
+	 float:left;
+   width:10%;
+   background:transparent;
+	 margin-top:0.5em;
+ }
+
+ article.fillerLeft{
+	 float:left;
+	 width:15%;
+	 height:1em;
+   background: transparent;
+ }
+
+ article.fillerRight{
+	 float:left;
+	 width:5%;
+	 height:1em;
+   background: transparent;
+ }
+
+ article.workDescrip{
+	 float: right;
+   width: 65%;
+   background-color: transparent;
+	 text-align: left;
+	 margin-right: 5%;
+ }
+
+ /* Clear floats after the columns */
+section:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  article.workIcons{
+    width: 100%;
+    height: auto;
+  }
+	article.workDescrip {
+    width: 100%;
+    height: auto;
+		margin-right:0%;
 	}
-	html {
-	  scroll-behavior: smooth;
+	article.fillers{
+		width:0%;
+		height:0%;
 	}
+}
+
+ img.experienceIcon{
+
+ }
+
+ ul.experienceList {
+  list-style-type: none;
+  width : 70em;
+  margin: 0 auto;}
+  @media screen and (max-width: 1280px) {
+    .wrapper > .inner {
+      width: 90%; } }
+  @media screen and (max-width: 980px) {
+    .wrapper > .inner {
+      width: 100%; } }

@@ -98,3 +98,91 @@
 	});
 
 })(jQuery);
+// Get the modals
+var inject = document.getElementById("Injection Mobo");
+var oled = document.getElementById("OLED Daughter");
+var square = document.getElementById("Square Wave Gen");
+var cnc = document.getElementById("CNC Mobo");
+var pdb = document.getElementById("Sailbot PDB");
+var uv = document.getElementById("UV LED Driver");
+var voltage = document.getElementById("Voltage Monitor");
+
+// Get the button that opens the modal
+var injectBtn = document.getElementById("injectBtn");
+var oledBtn = document.getElementById("daughterBoardBtn");
+var squareBtn = document.getElementById("squareWaveBtn");
+var cncBtn = document.getElementById("desktopCNCBtn");
+var pdbBtn = document.getElementById("pdbBtn");
+var uvBtn = document.getElementById("uvBtn");
+var voltageBtn = document.getElementById("voltageBtn");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close");
+
+
+// When the user clicks on the button, open the modal
+injectBtn.onclick = function() {
+  inject.style.display = "block";
+}
+oledBtn.onclick = function() {
+  oled.style.display = "block";
+}
+squareBtn.onclick = function() {
+  square.style.display = "block";
+}
+cncBtn.onclick = function() {
+  cnc.style.display = "block";
+}
+pdbBtn.onclick = function() {
+  pdb.style.display = "block";
+}
+uvBtn.onclick = function() {
+  uv.style.display = "block";
+}
+voltageBtn.onclick = function() {
+  voltage.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span[0].onclick = function() {
+  inject.style.display = "none";
+}
+span[1].onclick = function() {
+  oled.style.display = "none";
+}
+span[2].onclick = function() {
+  square.style.display = "none";
+}
+span[3].onclick = function() {
+  cnc.style.display = "none";
+}
+span[4].onclick = function() {
+  pdb.style.display = "none";
+}
+span[5].onclick = function() {
+  uv.style.display = "none";
+}
+span[6].onclick = function() {
+  voltage.style.display = "none";
+}
+
+
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == inject) {
+    inject.style.display = "none";
+  } else if (event.target == oled){
+		oled.style.display = "none";
+	} else if (event.target == square){
+		square.style.display = "none";
+	} else if (event.target == cnc){
+		cnc.style.display = "none";
+	} else if (event.target == pdb){
+		pdb.style.display = "none";
+	} else if (event.target == uv){
+		uv.style.display = "none";
+	} else if (event.target == voltage){
+		voltage.style.display = "none";
+	}
+}
