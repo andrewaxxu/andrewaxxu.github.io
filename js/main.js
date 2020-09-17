@@ -121,27 +121,27 @@ var span = document.getElementsByClassName("close");
 
 
 // When the user clicks on the button, open the modal
-injectBtn.onclick = function() {
-  inject.style.display = "block";
-}
-oledBtn.onclick = function() {
-  oled.style.display = "block";
-}
-squareBtn.onclick = function() {
-  square.style.display = "block";
-}
-cncBtn.onclick = function() {
-  cnc.style.display = "block";
-}
-pdbBtn.onclick = function() {
-  pdb.style.display = "block";
-}
-uvBtn.onclick = function() {
-  uv.style.display = "block";
-}
-voltageBtn.onclick = function() {
-  voltage.style.display = "block";
-}
+// injectBtn.onclick = function() {
+//   inject.style.display = "block";
+// }
+// oledBtn.onclick = function() {
+//   oled.style.display = "block";
+// }
+// squareBtn.onclick = function() {
+//   square.style.display = "block";
+// }
+// cncBtn.onclick = function() {
+//   cnc.style.display = "block";
+// }
+// pdbBtn.onclick = function() {
+//   pdb.style.display = "block";
+// }
+// uvBtn.onclick = function() {
+//   uv.style.display = "block";
+// }
+// voltageBtn.onclick = function() {
+//   voltage.style.display = "block";
+// }
 
 // When the user clicks on <span> (x), close the modal
 span[0].onclick = function() {
